@@ -148,3 +148,5 @@ export const GetUser = createParamDecorator((data, ctx: ExecutionContext): User 
 ```
 
 ## 6. 인증된 유저만 게시물을 보고 쓸 수 있게 만들기
+- boards 모듈에 AuthGuard를 imports 해줌
+- controller 위에 AuthGuard 데코레이터 작성
