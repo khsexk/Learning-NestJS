@@ -24,7 +24,14 @@
 Chatting app using nest js
 
 ## Package Manager 
-npm
+**→ npm**
+
+## Using Module
+```bash
+$ npm i @nestjs/wetsockets @nestjs/platform-socket.io --save
+$ npm i socket.io
+$ npm i ejs --save
+```
 
 ## Running the app
 
