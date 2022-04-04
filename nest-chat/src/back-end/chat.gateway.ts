@@ -19,10 +19,10 @@ export class EventsGateway implements OnGatewayConnection, OnGatewayDisconnect {
 
     // onConnect 컨트롤
     public handleConnection(client): void {
-        console.log('hi');
-        client['id'] = String(Number(new Date()));
-        client['nickname'] = '낯선남자' + String(Number(new Date()));
-        this.client[client['id']] = client;
+      console.log('connected', client.id);
+      client.leave(client.id);
+      client.data.roomId = `room:lobby`;
+      client.join('room:lobby');
     }
 
     // onDisconnect 컨트롤
