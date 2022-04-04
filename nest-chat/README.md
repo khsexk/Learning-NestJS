@@ -29,7 +29,7 @@ Chatting app using nest js
 ## Using Module
 ```bash
 $ npm i @nestjs/wetsockets @nestjs/platform-socket.io --save
-$ npm i socket.io
+$ npm i socket.io uuidv4
 $ npm i ejs --save
 ```
 

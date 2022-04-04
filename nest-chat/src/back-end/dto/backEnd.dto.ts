@@ -3,3 +3,11 @@ export class chatRoomListDTO {
     cheifId: string;
     roomName: string;
 }
+
+export class setInitDTO {
+    nickname: string;
+    room: {
+        roomId: string;
+        roomName: string;
+    };
+}
